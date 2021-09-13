@@ -1,0 +1,29 @@
+require_relative '../node_modules/react-snapback/scripts/react_snapback_pods'
+require_relative '../node_modules/@react-snapback-community/cli-platform-ios/snapback_modules'
+
+platform :ios, '10.0'
+
+target 'snapback' do
+  config = use_snapback_modules!
+
+  use_react_snapback!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => true
+  )
+
+  target 'snapbackTests' do
+    inherit! :complete
+    # Pods for testing
+  end
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  # use_flipper!()
+
+  post_install do |installer|
+    react_snapback_post_install(installer)
+  end
+end
