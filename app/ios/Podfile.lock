@@ -473,7 +473,7 @@ SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: 7b423f9e248eae65987838148c36eec1dbfe0b53
-  FBReactNativeSpec: 959a274115accf979a0f657b33ceed155cf6005e
+  FBReactNativeSpec: 2a67ccac023c30f7da287f6380c4fcc78a2bd724
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   hermes-engine: 7d97ba46a1e29bacf3e3c61ecb2804a5ddd02d4f
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
@@ -513,6 +513,6 @@ SPEC CHECKSUMS:
   RNVectorIcons: 31cebfcf94e8cf8686eb5303ae0357da64d7a5a4
   Yoga: a7de31c64fe738607e7a3803e3f591a4b1df7393
 
-PODFILE CHECKSUM: 6588c9acb90ea7f459f126c5d93c71dfb65cbbe2
+PODFILE CHECKSUM: 2bb642d4f57fb68ab983301e4d11435527b9d47f
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.1

@@ -1,12 +1,13 @@
-require_relative '../node_modules/react-snapback/scripts/react_snapback_pods'
-require_relative '../node_modules/@react-snapback-community/cli-platform-ios/snapback_modules'
+
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 platform :ios, '10.0'
 
 target 'snapback' do
-  config = use_snapback_modules!
+  config = use_native_modules!
 
-  use_react_snapback!(
+  use_react_native!(
     :path => config[:reactNativePath],
     # to enable hermes on iOS, change `false` to `true` and then install pods
     :hermes_enabled => true
@@ -24,6 +25,6 @@ target 'snapback' do
   # use_flipper!()
 
   post_install do |installer|
-    react_snapback_post_install(installer)
+    react_native_post_install(installer)
   end
 end
