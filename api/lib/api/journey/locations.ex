@@ -16,7 +16,7 @@ defmodule Api.Journey.Locations do
   @doc false
   def changeset(locations, attrs) do
     locations
-    |> cast(attrs, [:name, :description, :tag, :favorite, :latitude, :longitude])
-    |> validate_required([:name, :description, :tag, :favorite, :latitude, :longitude])
+    |> cast(attrs, [:name, :description, :tag, :favorite, :latitude, :longitude ])
+    |> validate_required([:name, :description, :latitude, :longitude, ])
   end
 end
